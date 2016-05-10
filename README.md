@@ -21,6 +21,14 @@ Initiate using the following code ('Spinner' being the instance name used in the
 mySpinner = new Spinner
 ```
 
+By default, the activity indicator will start pre-looped. If startLooped is set false, it will appear in sequence depending on direction (see options below). You can however manually start or stop it. This may be useful if you want to show or hide the spinner and save some processing by stopping the spinner (although you could just destroy it and create it again). Please note, starting will start from the beginning, not from it's previously stopped state.
+
+Stop animation
+`mySpinner.stop()`
+
+Start (restart) animation
+`mySpinner.start()`
+
 # Options
 General global options applied to the spinner. If ommitted, the defaults are used as listed below. (Note: Standard layer properties can be applied as normal, such as x, y, z, scale, rotation, opacity etc.)
 
