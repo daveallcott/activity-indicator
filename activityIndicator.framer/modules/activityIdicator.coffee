@@ -168,14 +168,7 @@ class module.exports extends Layer
 			startTime = (totalTime - startTime) % totalTime
 			animateFromTime(object,i,startTime * options.cycles)
 
-
-
 		#external functions
-
-		@_completed = 0
-		@setCompletedPercent = (completed) ->
-			@_completed = @_completed + completed
-
 		@stop = () ->
 			options.paused = false
 			for i in [0...objects.length]
@@ -187,8 +180,3 @@ class module.exports extends Layer
 				startTime = i*(totalTime/options.count)
 				startTime = (totalTime - startTime) % totalTime
 				animateFromTime(objects[i],i,startTime)
-
-
-	@define "completed",
-		get: -> @_completed
-		set: (value) -> @_completed = value
