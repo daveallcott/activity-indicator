@@ -1,4 +1,4 @@
-# Activity Indicator
+# Activity Indicator Framer Module
 
 This module generates looped array animation such as an an iOS activity indicator. Animation is controlled by adding animation states which are triggered in sequence. If the radial option is true, objects are arranged in a radial array, like a spinner. If set to false, the objects will animate to their positions and properties. 
 
