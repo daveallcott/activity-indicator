@@ -8,7 +8,7 @@ The animations will start pre-looped by default, as if it had already played a c
 
 # Installation
 - Create a new Framer project
-- Copy the `activityIndicator.coffee` file to the `modules` folder in your project
+- Copy the `activityIndicator.coffee` file (located in activityIndicator.framer/modules) to the `modules` folder in your project
 
 # Usage
 Include the script using the following code ('Spinner' can be any text you want)
